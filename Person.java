@@ -62,4 +62,13 @@ public class Person {
     public void setPhoneNumber(int phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+    Contact newContact = new Contact(firstName, lastName, address, city, state, zip, phoneNumber, email);
+
+    // Add the new contact to the address book
+            AddressBook.addContact  (newContact);
+
+            System.out.print("Do you want to add another contact? (yes/no): ");
+    String userInput = scanner.nextLine().toLowerCase();
+    addMoreContacts = userInput.equals("yes");
+}
 }
