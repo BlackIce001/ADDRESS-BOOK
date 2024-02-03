@@ -1,74 +1,66 @@
 public class Person {
-    private String firstName;
-    private String lastName;
+    private String firstname;
+    private String lastname;
     private String city;
-    private String State;
+    private String state;
+    private Integer zip;
+    private Integer phoneNo;
     private String email;
-    private int zip;
-    private int phoneNumber;
 
-    public String getFirstName() {
-        return firstName;
+
+    public String getFirstname(){
+        return firstname;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getLastname(){
+        return lastname;
     }
 
-    public String getCity() {
+    public String getCity(){
         return city;
     }
 
-    public String getState() {
-        return State;
+    public String getState(){
+        return state;
     }
 
-    public String getEmail() {
+    public String getEmail(){
         return email;
     }
 
-    public int getZip() {
+    public Integer getZip(){
         return zip;
     }
 
-    public int getPhoneNumber() {
-        return phoneNumber;
+    public Integer getPhoneNo(){
+        return phoneNo;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public  void setFirstname(String firstname){
+        this.firstname = firstname;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastname(String lastname){
+        this.lastname = lastname;
     }
 
-    public void setCity(String city) {
+    public void setCity(String city){
         this.city = city;
     }
 
-    public void setState(String state) {
-        State = state;
+    public  void setState(String state){
+        this.state = state;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setZip(int zip) {
+    public void setZip(Integer zip){
         this.zip = zip;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setPhoneNo(Integer phoneNo){
+        this.phoneNo = phoneNo;
     }
-    Contact newContact = new Contact(firstName, lastName, address, city, state, zip, phoneNumber, email);
 
-    // Add the new contact to the address book
-            AddressBook.addContact  (newContact);
-
-            System.out.print("Do you want to add another contact? (yes/no): ");
-    String userInput = scanner.nextLine().toLowerCase();
-    addMoreContacts = userInput.equals("yes");
-}
+    public  void setEmail(String email){
+        this.email = email;
+    }
 }
